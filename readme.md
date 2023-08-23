@@ -1,12 +1,12 @@
 # Pool Tech  
 
-Friend Tech but part of the chat earnings go to funding a Rocket Pool and then the entire chat can split the reward ETH.
+Friend Tech but part of the chat earnings go to funding a Rocket Pool and then the entire chat can split the reward ETH. Also, create group (multisignature) accounts as an entire pool or with certain members of the pool.  
 
 ## Todo
 
 - Either remove Tailwind Builder and just have CDN or fix tailwind builder so it works with all styles
 - Add an embedded wallet (Privy) like Friend.Tech...?
-- Literally all the hard smart contract stuff T_T (Rocket Pool, shared earnings, etc. etc.)
+- Literally all the hard smart contract stuff T_T (Rocket Pool, Group Account Multi-Sigs, shared earnings, etc. etc.)
 - Remove unneccessary DB stuff and other miscellaneous stuff from gowind
 - Update readme
 
