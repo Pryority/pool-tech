@@ -22,24 +22,31 @@
           </section>
           <div class="flex w-full items-center justify-between border px-4 py-2 rounded-lg">
             <div class="flex items-center gap-4">
-              <p>Pooled ETH - 8 ETH</p>
+              <p>Pooled Balance - 4 ETH</p>
+              <p>Node Operator Bond - 4 ETH</p>
             </div>
             <p class="px-3 py-1 bg-lime-600 text-xs text-white font-semibold rounded-full">Rewards ON</p>
           </div>
-          <div id="chatbox" class="flex flex-col gap-2 w-full items-end h-full border p-4 rounded-lg">
-            <!-- <p class="text-gray-400 tracking-wide">Pool Chat</p> -->
-            <textarea id="chat-input" class="bg-white resize-none border rounded-lg p-2 w-full min-h-[60px] h-[40vh]" placeholder="Type your message here..."></textarea>
-            <button id="chat-submit" class="px-5 py-2 mt-4 font-medium bg-sky-600 hover:bg-sky-500 transition-all duration-75 ease-out text-white border-blue-800 hover:border-blue-900 border w-fit rounded-full">
-              Submit
+          <div id="chatbox" class="relative flex flex-col gap-2 w-full items-end h-full border rounded-lg">
+            <textarea
+              id="chat-input"
+              class="bg-white resize-none border rounded-lg p-2 w-full min-h-[60px] h-[40vh]"
+              placeholder="Type your message here..."
+            ></textarea>
+            <button
+              id="chat-submit"
+              class="absolute bottom-4 right-4 px-6 py-2 text-2xl font-medium bg-sky-600 hover:bg-sky-500 transition-all duration-75 ease-out text-white border-blue-800 hover:border-blue-900 border w-fit rounded-[20px]"
+            >
+              Send
             </button>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:flex gap-2 md:gap-3 lg:gap-4">
-            <button id="create-group-wallet-btn" class="flex gap-3 w-full items-center px-3 py-1 text-sm font-medium bg-amber-600/80 hover:bg-amber-700 transition-all duration-75 ease-out text-white border-yellow-600 hover:border-yellow-800 border rounded-xl">
+            <button id="create-group-wallet-btn" class="flex gap-3 w-full items-center px-3 py-1 text-sm font-medium bg-amber-200/80 hover:bg-amber-700 transition-all duration-75 ease-out text-orange-600 hover:text-orange-50 border-yellow-600 hover:border-yellow-800 border rounded-xl">
               <p>Create Group Accounts</p>
               <p class="text-2xl mb-1">+</p>
             </button>
-            <button id="create-group-wallet-btn" class="flex gap-3 w-full items-center px-3 py-3 text-sm font-medium bg-purple-600/80 hover:bg-purple-700 transition-all duration-75 ease-out text-white border-violet-600 hover:border-violet-800 border rounded-xl">
-              <p>Suggest New Pool</p>
+            <button id="create-group-wallet-btn" class="flex gap-3 w-full items-center px-3 py-3 text-sm font-medium bg-purple-200/80 hover:bg-purple-700 transition-all duration-75 ease-out text-purple-600 hover:text-purple-50 border-violet-600 hover:border-violet-800 border rounded-xl">
+              <p>Suggest New Pool</psvg>
               <!-- <p class="text-2xl mb-1"></p> -->
             </button>
           </div>
