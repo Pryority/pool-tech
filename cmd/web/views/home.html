@@ -1,0 +1,51 @@
+{{ define "home" }}
+<section class="container my-6 transitional-all ease-in-out duration-75">
+  <div class="flex flex-col w-full p-4 md:p-0 min-h-screen">
+      <div class="flex flex-col gap-6 items-start w-full">
+        <h1 class="font-bold text-lg md:text-4xl lg:text-[72px] uppercase md:leading-[100px] tracking-tighter italic">Your Pools</h1>
+        <article class="flex flex-col w-full gap-4 p-4 rounded-md bg-slate-50/40 border">
+          <section id="pool-card-header" class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full oe-justify">
+            <h3 class="sm:text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-tighter">The Silly Stakers</h3>
+              <p class="font-light">Members: 48</p>
+              <div class="flex gap-3 items-center pl-3 pr-2 py-2 bg-slate-200 text-gray-700 font-semibold rounded-2xl w-fit">
+                <p>12 Group Accounts</p>
+                <button id="view-group-accounts-button" class="px-2 py-1 font-medium bg-gray-300 hover:bg-gray-500 transition-all duration-75 ease-out text-slate-700 hover:text-slate-100 border-slate-400 hover:border-slate-900 border rounded-full text-xs">
+                  View
+                </button>
+              </div>
+              <div class="flex gap-3 items-center pl-3 pr-2 py-2 bg-slate-200 text-gray-700 font-semibold rounded-2xl w-fit">
+                <p>Budget</p>
+                <button id="view-group-accounts-button" class="px-2 py-1 font-medium bg-gray-300 hover:bg-gray-500 transition-all duration-75 ease-out text-slate-700 hover:text-slate-100 border-slate-400 hover:border-slate-900 border rounded-full text-xs">
+                  View
+                </button>
+              </div>
+          </section>
+          <div class="flex w-full items-center justify-between border px-4 py-2 rounded-lg">
+            <div class="flex items-center gap-4">
+              <p>Pooled ETH - 8 ETH</p>
+            </div>
+            <p class="px-3 py-1 bg-lime-600 text-xs text-white font-semibold rounded-full">Rewards ON</p>
+          </div>
+          <div id="chatbox" class="flex flex-col gap-2 w-full items-end h-full border p-4 rounded-lg">
+            <!-- <p class="text-gray-400 tracking-wide">Pool Chat</p> -->
+            <textarea id="chat-input" class="bg-white resize-none border rounded-lg p-2 w-full min-h-[60px] h-[40vh]" placeholder="Type your message here..."></textarea>
+            <button id="chat-submit" class="px-5 py-2 mt-4 font-medium bg-sky-600 hover:bg-sky-500 transition-all duration-75 ease-out text-white border-blue-800 hover:border-blue-900 border w-fit rounded-full">
+              Submit
+            </button>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:flex gap-2 md:gap-3 lg:gap-4">
+            <button id="create-group-wallet-btn" class="flex gap-3 w-full items-center px-3 py-1 text-sm font-medium bg-amber-600/80 hover:bg-amber-700 transition-all duration-75 ease-out text-white border-yellow-600 hover:border-yellow-800 border rounded-xl">
+              <p>Create Group Accounts</p>
+              <p class="text-2xl mb-1">+</p>
+            </button>
+            <button id="create-group-wallet-btn" class="flex gap-3 w-full items-center px-3 py-3 text-sm font-medium bg-purple-600/80 hover:bg-purple-700 transition-all duration-75 ease-out text-white border-violet-600 hover:border-violet-800 border rounded-xl">
+              <p>Suggest New Pool</p>
+              <!-- <p class="text-2xl mb-1"></p> -->
+            </button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoWind</title>
+    <link rel="icon" href="/public/assets/icons/favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="/public/assets/icons/site.webmanifest" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/assets/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/assets/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/public/assets/icons/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/public/assets/icons/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/public/assets/icons/android-chrome-512x512.png" />
+    <link href="/public/assets/styles/styles.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/htmx.org@v1.5.0/dist/htmx.js"></script>
+  </head>
+  <body class="flex flex-col w-full items-center min-h-screen">
+    {{ template "navbar" }}
+
+    {{ if eq .RouteName "about" }}
+      {{ template "about" . }}
+    {{ else if eq .RouteName "contact" }}
+      {{ template "contact" . }}
+    {{ else if eq .RouteName "debug" }}
+      {{ template "debug" . }}
+    {{ else if eq .RouteName "login" }}
+      {{ template "login" . }}
+    {{ else if eq .RouteName "register" }}
+      {{ template "register" . }}
+    {{ else }}
+      {{ template "home" . }}
+    {{ end }}
+
+    <footer class="grid grid-cols-3 gap-4 w-full bg-blue-50 p-8">
+      <div class="flex flex-col w-full items-center col-span-1">
+        <p>Col 1 - Fake Footer Content</p>
+      </div>
+      <div class="flex flex-col w-full items-center col-span-1">
+        <p>Col 2 - Fake Footer Content</p>
+      </div>
+      <div class="flex flex-col w-full items-center col-span-1">
+        <p>Col 3 - Fake Footer Content</p>
+      </div>
+    </footer>
+</html>

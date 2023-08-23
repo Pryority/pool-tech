@@ -1,0 +1,88 @@
+{{ define "login" }}
+<section class="container mt-14">
+  <div class="flex flex-col w-full min-h-screen">
+    <div class="w-full">
+      <div class="px-4 mx-auto md:max-w-screen-sm">
+        <div class="flex w-full gap-8 justify-between items-center">
+          <h1 class="mb-4 text-3xl text-center font-bold">Login</h1>
+        </div>
+        <hr class="border-gray-200 mb-4" />
+
+
+        <form
+          hx-post="/api/login"       
+          hx-target="#response"  
+          hx-swap="outerHTML"     
+          class="w-full"
+        >
+          <div class="w-full mb-4">
+            <label class="block text-gray-700 text-xs  mb-2" for="emailaddress">
+              Email Address
+            </label>
+            <input
+              class="
+                shadow
+                appearance-none
+                border
+                py-2
+                px-3
+                w-full
+                text-gray-700
+                leading-tight
+                focus:outline-none focus:shadow-outline
+              "
+              id="emailaddress"
+              type="text"
+              placeholder="test@gowind.com"
+            />
+          </div>
+
+          <div class="w-full mb-4">
+            <label class="block text-gray-700 text-xs  mb-2" for="password">
+              Password
+            </label>
+            <input
+              class="
+                shadow
+                appearance-none
+                border
+                py-2
+                px-3
+                w-full
+                text-gray-700
+                leading-tight
+                focus:outline-none focus:shadow-outline
+              "
+              id="password"
+              type="password"
+              placeholder="V3ry5tr0NG!Passwooord"
+            />
+          </div>
+
+          <button
+            class="
+              block
+              bg-blue-500
+              hover:bg-teal-dark
+              text-white
+              w-full
+              mt-4
+              py-2
+              px-4
+              rounded-lg
+            "
+            type="submit"
+            hx-trigger="click"
+          >
+            Submit
+          </button>
+        </form>
+
+        <p class="text-center pt-4 text-xs text-gray-500">
+          Don't have an account? <a class="text-blue-500 underline" href="/register">Register</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}

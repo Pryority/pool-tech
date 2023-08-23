@@ -1,0 +1,7 @@
+{{ define "note" }}
+<li class="flex flex-col w-full text-3xl p-4 rounded-lg bg-stone-50 border">
+    <h2 class="font-semibold tracking-tight">{{ .Title }}</h2>
+    <p class="font-light tracking-wide text-base">{{ .Content }}</p>
+    <button class="text-sm" hx-delete="/api/notes/{{ .ID }}">Delete</button>
+</li>
+{{end}}

@@ -1,0 +1,7 @@
+.oe-justify > *:nth-child(odd) {
+    justify-self: start;
+}
+
+.oe-justify > *:nth-child(even) {
+    justify-self: end;
+}

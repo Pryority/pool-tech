@@ -1,0 +1,56 @@
+{
+  "_format": "ethers-rs-sol-cache-3",
+  "paths": {
+    "artifacts": "cmd/server/contracts/out",
+    "build_infos": "cmd/server/contracts/out/build-info",
+    "sources": "cmd/server/contracts/src",
+    "tests": "test",
+    "scripts": "script",
+    "libraries": [
+      "cmd/server/contracts/lib"
+    ]
+  },
+  "files": {
+    "cmd/server/contracts/src/Counter.sol": {
+      "lastModificationDate": 1692664114301,
+      "contentHash": "ae6c800a2b4c57768024d6e9423d39e8",
+      "sourceName": "cmd/server/contracts/src/Counter.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.13",
+      "artifacts": {
+        "Counter": {
+          "0.8.19+commit.7dd6d404.Darwin.appleclang": "Counter.sol/Counter.json"
+        }
+      }
+    }
+  }
+}
