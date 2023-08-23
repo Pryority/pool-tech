@@ -10,7 +10,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/pryority/gowind/cmd/server/models"
+	"github.com/pryority/pool-tech/cmd/server/models"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"

@@ -1,18 +1,22 @@
-# gowind
+# Pool Tech  
 
-A Golang Full-Stack Scaffold
+Friend Tech but part of the chat earnings go to funding a Rocket Pool and then the entire chat can split the reward ETH.
+
+## Todo
+
+- Either remove Tailwind Builder and just have CDN or fix tailwind builder so it works with all styles
+- Add an embedded wallet (Privy) like Friend.Tech...?
+- Literally all the hard smart contract stuff T_T (Rocket Pool, shared earnings, etc. etc.)
+- Remove unneccessary DB stuff and other miscellaneous stuff from gowind
+- Update readme
 
 ## Technology
 
-The gowind application is built using the following technologies:
-
 - [**Go**](https://go.dev/doc/): The backend of the application is written in Go, a powerful and efficient programming language. Go provides excellent support for concurrency and has a strong standard library, making it suitable for building high-performance applications.
 
+- [**Air**](https://github.com/cosmtrek/air): A development tool used to live reload Golang applications.
+
 - [**Fiber**](https://docs.gofiber.io/): Fiber is a web framework for Go that is designed to be fast and efficient. It provides a simple and intuitive API for building web applications and APIs. Fiber is used in this application to handle HTTP requests and routing.
-
-- [**GORM**:](https://gorm.io/docs/) GORM is an Object-Relational Mapping (ORM) library for Go. It simplifies database operations by providing a high-level interface to interact with the database. GORM is used in this application for database access and query management.
-
-- [**PostgreSQL**](https://www.postgresql.org/about/): PostgreSQL is a powerful and feature-rich open-source relational database management system. It is used as the database for this application, providing robust data storage and retrieval capabilities.
 
 - [**HTML Templates**](https://docs.gofiber.io/guide/templates/): The application uses HTML templates for generating dynamic HTML content. The `github.com/gofiber/template/html/v2` package is used for rendering HTML templates with Fiber.
 

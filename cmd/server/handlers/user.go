@@ -3,7 +3,7 @@ package handlers
 
 import (
 	"github.com/gofiber/fiber/v2"
-	"github.com/pryority/gowind/cmd/server/models"
+	"github.com/pryority/pool-tech/cmd/server/models"
 	"golang.org/x/crypto/bcrypt"
 )
 
